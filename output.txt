@@ -1,0 +1,9 @@
+Inside Nginx Lua script: Processing Order... Request from: 2
+Status: true
+Beverage Type: espresso
+Inside Nginx Lua script: Processing Order... Request from: 3
+Status: true
+Beverage Type: ice tea
+Inside Nginx Lua script: Processing Order... Request from: 1
+Status: true
+Beverage Type: ice tea

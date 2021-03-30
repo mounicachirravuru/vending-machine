@@ -22,7 +22,7 @@ services:
     image: yg397/openresty-thrift:xenial
     hostname: nginx-thrift
     ports:
-      - 8090:8090
+      - 8080:8080
     restart: always
     volumes:
       - ./nginx_reverse_proxy/lua-scripts:/usr/local/openresty/nginx/lua-scripts

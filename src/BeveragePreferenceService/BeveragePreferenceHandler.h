@@ -17,7 +17,7 @@ namespace vending_machine{
 
 class BeveragePreferenceServiceHandler : public BeveragePreferenceServiceIf {
  public:
-    BeveragePreferenceServiceHandler()
+    BeveragePreferenceServiceHandler();
 		  //ClientPool<ThriftClient<WeatherServiceClient>> *) ;
   ~BeveragePreferenceServiceHandler() override=default;
 
@@ -50,29 +50,25 @@ void BeveragePreferenceServiceHandler::getBeverage(std::string& _return,Beverage
     
     
    // 3. business logic
-   if(btype == BeverageType::type::HOT)
+            std::string hBeverage[3] = {"cappuccino", "latte", "espresso"};
+	    std::string cBeverage[3] = { "lemonade", "ice tea", "soda"};
 
 
-        
-               std::string preference = rand()[“cappuccino”,  “latte”,  “espresso”];
-                     
-               std::cout<<" The Beverage Preference is = "<< preference << std::endl;
-                   
-                   _return preference;
+	    srand(time(0));
+	    
+	    std::cout << "Beverage TYPE" <<btype<< std::endl;
 
-        // cout << " The Beverage Preference is  " << rand()[“cappuccino”,  “latte”,  “espresso”];
-           
+	    if ( btype == BeverageType::type::HOT)
+		     _return = hBeverage[rand() % 3 ];
+	    else
+		    _return = cBeverage[rand() % 3];
 
-	//_return = "Cold beverage";//BeverageType::type::COLD;
-
-   else
-
-	   std::string yourChoice = rand()[“lemonade”, “ice tea”,  “soda” ];
-               
-              std::cout<<" Your Beverage Preference is = " << yourChoice << std::endl;
-               
-              _return yourChoice;
 }
+}
+
+
+
+
 //#endif
 
 
@@ -80,4 +76,3 @@ void BeveragePreferenceServiceHandler::getBeverage(std::string& _return,Beverage
 
 
 #endif //VENDING_MACHINE_MICROSERVICES_BEVERAGEPREFERENCEHANDLER_H
-

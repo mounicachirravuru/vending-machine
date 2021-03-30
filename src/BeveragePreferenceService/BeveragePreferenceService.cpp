@@ -47,7 +47,7 @@ int main(int argc, char **argv) {
   // 6: configure this server
   TThreadedServer server(
       std::make_shared<BeveragePreferenceServiceProcessor>(
-      std::make_shared<BeveragePreferenceServiceHandler>()
+      std::make_shared<BeveragePreferenceServiceHandler>()),
       std::make_shared<TServerSocket>("0.0.0.0", my_port),
       std::make_shared<TFramedTransportFactory>(),
       std::make_shared<TBinaryProtocolFactory>()
