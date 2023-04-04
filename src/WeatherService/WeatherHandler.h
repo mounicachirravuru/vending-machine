@@ -27,7 +27,7 @@ WeatherServiceHandler::WeatherServiceHandler() {
 
 }
 
-// Remote Procedure "PlaceOrder"
+// Remote Procedure  "PlaceOrder"
 
 WeatherType::type WeatherServiceHandler::GetWeather(const int64_t city) {
      // Your implementation goes here
