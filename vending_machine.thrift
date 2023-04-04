@@ -57,6 +57,6 @@ service WeatherService{
 
 service BeveragePreferenceService{
         string getBeverage(
-		    1: BeverageType btype
+		   1: BeverageType btype
 	)		
 	}
