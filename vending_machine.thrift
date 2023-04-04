@@ -51,7 +51,7 @@ service UpdateWeatherService{
 
 service WeatherService{
 	WeatherType GetWeather(
-		1: i64 city
+		 1: i64 city
 	)
 }
 
