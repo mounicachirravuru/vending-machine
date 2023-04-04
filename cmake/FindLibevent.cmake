@@ -1,4 +1,4 @@
-# find LibEvent
+# find  LibEvent
 # an event notification library (http://libevent.org/)
 #
 # Usage:
