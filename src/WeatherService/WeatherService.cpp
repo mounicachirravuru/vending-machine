@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
   init_logger();
 
 
-  // 2: read the config file for ports and addresses
+  // 2: read the config  file for ports and addresses
   json config_json;
   if (load_config_file("config/service-config.json", &config_json) != 0) {
     exit(EXIT_FAILURE);
