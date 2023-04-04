@@ -40,7 +40,7 @@ OrderBeverageServiceHandler::OrderBeverageServiceHandler(
       
 }
 
-// Remote Procedure "PlaceOrder"
+// Remote  Procedure "PlaceOrder"
 void OrderBeverageServiceHandler::PlaceOrder(std::string& _return, const int64_t city){
      // Your implementation goes here
      printf("PlaceOrder\n");
