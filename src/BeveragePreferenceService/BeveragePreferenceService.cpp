@@ -40,7 +40,7 @@ int main(int argc, char **argv) {
 
  
  
-  // 5: get the client of weather-service
+  // 5: get.  the client of weather-service
   //ClientPool<ThriftClient<WeatherServiceClient>> weather_client_pool(
   //    "weather-service", weather_service_addr, weather_service_port, 0, 128, 1000);
 
