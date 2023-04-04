@@ -6,7 +6,7 @@ add_executable(
 )
 
 target_include_directories(
-	 WeatherService PRIVATE
+	WeatherService PRIVATE
 )
 
 target_link_libraries(
