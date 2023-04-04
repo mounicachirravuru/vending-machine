@@ -1,22 +1,22 @@
 version: "3"
 services:
   order-beverage-service:
-    image: bhurechetan/chetan-vm:latest
+    image: mounicac/vending-machine-microservices:latest
     hostname: order-beverage-service
     restart: always
     entrypoint: OrderBeverageService
 
   weather-service:
-    image: bhurechetan/chetan-vm:latest
+    image: mounicac/vending-machine-microservices:latest
     hostname: weather-service
     restart: always
     entrypoint: WeatherService
 
   beverage-preference-service:
-   image: bhurechetan/chetan-vm:latest
-   hostname: beverage-preference-service
-   restart: always
-   entrypoint: BeveragePreferenceService
+    image: mounicac/vending-machine-microservices:latest
+    hostname: beverage-preference-service
+    restart: always
+    entrypoint: BeveragePreferenceService
 
   nginx-thrift:
     image: yg397/openresty-thrift:xenial
