@@ -25,7 +25,7 @@ void sigintHandler(int sig) {
 int main(int argc, char **argv) {
   // 1: notify the singal handler if interrupted
   signal(SIGINT, sigintHandler);
-  // 1.1: Initialize logging
+  // 1.1: Initialize  logging
   init_logger();
 
 
